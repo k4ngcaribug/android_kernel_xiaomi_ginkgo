@@ -76,6 +76,6 @@ config ZRAM_ENTROPY_THRESHOLD
 	  uncompressed. The default value was chosen as a 
 
 config ZRAM_SIZE_OVERRIDE
-	int "ZRAM size to set from kernel. (e.g) set 4GB using config: ZRAM_SIZE_OVERRIDE=4"
-	range 1 16
-	default 2
+	int "ZRAM size to set from kernel"
+	range 1024 16348
+	default 2048
